@@ -22,6 +22,5 @@ jobs:
         SLACK_ICON: https://avatars.githubusercontent.com/u/44036562?s=48&v=4
         SLACK_FOOTER: ""
         MSG_MINIMAL: true
-        SLACK_TITLE: "Repo Name"
         SLACK_MESSAGE: |
           test
