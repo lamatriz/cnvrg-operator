@@ -54,6 +54,7 @@ spec:
         ports:
         - containerPort: 3030
           protocol: TCP
+          name: http
         envFrom:
           - secretRef:
               name: {{ .Spec.Dbs.Es.CredsRef }}

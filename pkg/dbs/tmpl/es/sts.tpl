@@ -96,6 +96,7 @@ spec:
               name: es-ilm-cm
         ports:
         - containerPort: {{ .Spec.Dbs.Es.Port }}
+          name: http
         resources:
           limits:
             cpu: {{ .Spec.Dbs.Es.Limits.Cpu }}

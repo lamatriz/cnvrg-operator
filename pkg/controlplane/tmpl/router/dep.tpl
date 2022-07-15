@@ -38,6 +38,7 @@ spec:
           image: {{ .Spec.ControlPlane.CnvrgRouter.Image }}
           ports:
             - containerPort: 80
+              name: http
           volumeMounts:
             - mountPath: /etc/nginx
               readOnly: true

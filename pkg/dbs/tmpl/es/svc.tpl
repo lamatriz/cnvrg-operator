@@ -22,5 +22,6 @@ spec:
     {{- if eq .Spec.Networking.Ingress.Type "nodeport" }}
     nodePort: {{ .Spec.Dbs.Es.NodePort }}
     {{- end }}
+    name: http
   selector:
     app: {{ .Spec.Dbs.Es.SvcName }}

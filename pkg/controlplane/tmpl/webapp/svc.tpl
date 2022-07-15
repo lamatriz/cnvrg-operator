@@ -21,5 +21,6 @@ spec:
     {{- if eq .Spec.Networking.Ingress.Type "nodeport" }}
     nodePort: {{ .Spec.ControlPlane.WebApp.NodePort }}
     {{- end }}
+    name: http
   selector:
     app: {{ .Spec.ControlPlane.WebApp.SvcName }}

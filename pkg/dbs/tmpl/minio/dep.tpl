@@ -67,6 +67,7 @@ spec:
                   key: CNVRG_STORAGE_SECRET_KEY
           ports:
             - containerPort: {{ .Spec.Dbs.Minio.Port }}
+              name: http
           volumeMounts:
             - name: minio-storage
               mountPath: /data # the Minio mount path have to be /data -> it's hardcoded into Minio server startup command

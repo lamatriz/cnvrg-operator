@@ -24,5 +24,6 @@ spec:
       {{- if eq .Spec.Networking.Ingress.Type "nodeport" }}
       nodePort: {{ .Spec.Logging.Elastalert.NodePort }}
       {{- end }}
+      name: http
   selector:
     app: {{ .Spec.Logging.Elastalert.SvcName }}

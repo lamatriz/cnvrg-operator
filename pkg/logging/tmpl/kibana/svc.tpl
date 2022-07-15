@@ -25,3 +25,4 @@ spec:
       {{- if eq .Spec.Networking.Ingress.Type "nodeport" }}
       nodePort: {{ .Spec.Logging.Kibana.NodePort }}
       {{- end }}
+      name: http

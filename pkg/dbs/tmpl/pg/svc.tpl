@@ -15,5 +15,6 @@ metadata:
 spec:
   ports:
     - port: {{ .Spec.Dbs.Pg.Port }}
+      name: tcp
   selector:
     app: {{ .Spec.Dbs.Pg.SvcName }}

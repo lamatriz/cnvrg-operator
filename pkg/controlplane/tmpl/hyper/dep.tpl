@@ -64,6 +64,7 @@ spec:
                 name: cp-object-storage
           ports:
             - containerPort: {{ .Spec.ControlPlane.Hyper.Port }}
+              name: http
           readinessProbe:
             failureThreshold: 3
             httpGet:

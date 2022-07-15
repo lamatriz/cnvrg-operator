@@ -53,6 +53,7 @@ spec:
           command: [ "/bin/bash", "-lc", "redis-server /config/redis.conf" ]
           ports:
             - containerPort: {{ .Spec.Dbs.Redis.Port }}
+              name: redis
           resources:
             limits:
               cpu: {{ .Spec.Dbs.Redis.Limits.Cpu }}

@@ -137,6 +137,7 @@ spec:
         name: cnvrg-app
         ports:
           - containerPort: {{ .Spec.ControlPlane.WebApp.Port }}
+            name: http
         readinessProbe:
           httpGet:
             path: "/healthz"

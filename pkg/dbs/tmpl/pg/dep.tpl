@@ -62,6 +62,7 @@ spec:
           ports:
             - containerPort: {{.Spec.Dbs.Pg.Port}}
               protocol: TCP
+              name: tcp
           livenessProbe:
             exec:
               command:

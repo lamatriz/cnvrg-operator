@@ -16,5 +16,6 @@ metadata:
 spec:
   ports:
     - port: {{ .Spec.ControlPlane.Hyper.Port }}
+      name: http
   selector:
     app: {{ .Spec.ControlPlane.Hyper.SvcName }}

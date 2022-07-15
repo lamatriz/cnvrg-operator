@@ -15,5 +15,6 @@ metadata:
 spec:
   ports:
   - port: 80
+    name: http
   selector:
     app: {{ .Spec.ControlPlane.CnvrgRouter.SvcName }}
